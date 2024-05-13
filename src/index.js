@@ -6,6 +6,7 @@ import reportWebVitals from './reportWebVitals';
 import TutorialState from './TutorialState';
 import TutorialReducer from './TutorialReducer';
 import TutorialEffect from './TutorialEffect';
+import TutorialRef from './TutorialRef';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -14,6 +15,7 @@ root.render(
     <TutorialState />
     <TutorialReducer />
     <TutorialEffect />
+    <TutorialRef />
   </React.StrictMode>
 );
 
