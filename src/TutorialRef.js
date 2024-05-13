@@ -4,7 +4,10 @@ const TutorialRef= () => {
     const inputRef = useRef(null);
     
     const onClick = () => {
-        console.log(inputRef.current.value);
+        inputRef.current.focus();
+
+        //clear
+        inputRef.current.value = "";
     };
 
     return(
