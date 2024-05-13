@@ -27,7 +27,7 @@ const TutorialEffect=() => {
 
             UseEffect is primarily use for making API calls as the page loads.
         */
-    }, [count]);
+    }, []);
 
     return (
         <div>
