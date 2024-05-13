@@ -7,6 +7,7 @@ import TutorialState from './TutorialState';
 import TutorialReducer from './TutorialReducer';
 import TutorialEffect from './TutorialEffect';
 import TutorialRef from './TutorialRef';
+import TutorialLayoutEffect from './TutorialLayoutEffect';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -16,6 +17,7 @@ root.render(
     <TutorialReducer />
     <TutorialEffect />
     <TutorialRef />
+    <TutorialLayoutEffect />
   </React.StrictMode>
 );
 
