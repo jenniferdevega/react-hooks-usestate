@@ -1,0 +1,10 @@
+axios - library for API calls
+- npm install axios
+- yarn add axios
+
+git delete branch
+// delete branch locally
+git branch -D localBranchName
+
+// delete branch remotely
+git push origin --delete remoteBranchName
