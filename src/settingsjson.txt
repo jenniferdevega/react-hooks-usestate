@@ -1,0 +1,224 @@
+{
+  "tabnine.experimentalAutoImports": true,
+  "editor.fontSize": 15,
+  "terminal.integrated.fontSize": 15,
+  "editor.autoIndent": "brackets",
+  "[javascript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[javascriptreact]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "editor.formatOnType": true,
+  "editor.formatOnSave": true,
+  "terminal.integrated.env.osx": {},
+  "console-ninja.featureSet": "Community",
+  "notebook.formatOnSave.enabled": true,
+  "sonarlint.rules": {
+    "javascript:S6477": {
+      "level": "off"
+    }
+  },
+  "editor.linkedEditing": true,
+  "liveServer.settings.CustomBrowser": "chrome",
+  "terminal.integrated.profiles.osx": {
+    "bash": {
+      "path": "bash",
+      "args": ["-l"],
+      "icon": "terminal-bash"
+    },
+    "zsh": {
+      "path": "zsh",
+      "args": ["-l"]
+    },
+    "fish": {
+      "path": "fish",
+      "args": ["-l"]
+    },
+    "tmux": {
+      "path": "tmux",
+      "icon": "terminal-tmux"
+    },
+    "pwsh": {
+      "path": "pwsh",
+      "icon": "terminal-powershell"
+    }
+  },
+  "files.associations": {
+    "*.jsx": "javascriptreact",
+    "*.css": "html"
+  },
+  "workbench.iconTheme": "material-icon-theme",
+  "gitlens.ai.experimental.provider": "openai",
+  "gitlens.ai.experimental.openai.model": "gpt-4-turbo-preview",
+  "vscode-pets.theme": "beach",
+  "vscode-pets.throwBallWithMouse": true,
+  "vscode-pets.petSize": "medium",
+
+  // italic styles
+  "editor.tokenColorCustomizations": {
+    "textMateRules": [
+      {
+        "scope": [
+          // the following elements will be in italic
+          "comment",
+          "variable.other.readwrite.js",
+          "entity.other.attribute-name", // html attributes
+          "storage.type" //class, const keyword
+        ],
+        "settings": {
+          "fontStyle": "italic"
+        }
+      },
+      {
+        "scope": [
+          // the following elements will be displayed in bold
+          "entity.name.type.class" // class names
+        ],
+        "settings": {
+          "fontStyle": ""
+        }
+      },
+      {
+        "scope": [
+          // the following elements will be displayed in bold and italic
+          "entity.name.section.markdown" // markdown headlines
+        ],
+        "settings": {
+          "fontStyle": "italic"
+        }
+      },
+      {
+        "scope": [
+          // the following elements will be excluded from italics
+          //   (VSCode has some defaults for italics)
+          "invalid",
+          "keyword.operator",
+          "constant.numeric.css",
+          "keyword.other.unit.px.css",
+          "constant.numeric.decimal.js",
+          "constant.numeric.json",
+          "comment.block",
+          "entity.other.attribute-name.class.css"
+        ],
+        "settings": {
+          "fontStyle": ""
+        }
+      }
+    ]
+  },
+  "workbench.colorTheme": "GitHub Dark Default"
+}
+{
+  "tabnine.experimentalAutoImports": true,
+  "editor.fontSize": 15,
+  "terminal.integrated.fontSize": 15,
+  "editor.autoIndent": "brackets",
+  "[javascript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[javascriptreact]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "editor.formatOnType": true,
+  "editor.formatOnSave": true,
+  "terminal.integrated.env.osx": {},
+  "console-ninja.featureSet": "Community",
+  "notebook.formatOnSave.enabled": true,
+  "sonarlint.rules": {
+    "javascript:S6477": {
+      "level": "off"
+    }
+  },
+  "editor.linkedEditing": true,
+  "liveServer.settings.CustomBrowser": "chrome",
+  "terminal.integrated.profiles.osx": {
+    "bash": {
+      "path": "bash",
+      "args": ["-l"],
+      "icon": "terminal-bash"
+    },
+    "zsh": {
+      "path": "zsh",
+      "args": ["-l"]
+    },
+    "fish": {
+      "path": "fish",
+      "args": ["-l"]
+    },
+    "tmux": {
+      "path": "tmux",
+      "icon": "terminal-tmux"
+    },
+    "pwsh": {
+      "path": "pwsh",
+      "icon": "terminal-powershell"
+    }
+  },
+  "files.associations": {
+    "*.jsx": "javascriptreact",
+    "*.css": "html"
+  },
+  "workbench.iconTheme": "material-icon-theme",
+  "gitlens.ai.experimental.provider": "openai",
+  "gitlens.ai.experimental.openai.model": "gpt-4-turbo-preview",
+  "vscode-pets.theme": "beach",
+  "vscode-pets.throwBallWithMouse": true,
+  "vscode-pets.petSize": "medium",
+
+  // italic styles
+  "editor.tokenColorCustomizations": {
+    "textMateRules": [
+      {
+        "scope": [
+          // the following elements will be in italic
+          "comment",
+          "variable.other.readwrite.js",
+          "entity.other.attribute-name", // html attributes
+          "storage.type" //class, const keyword
+        ],
+        "settings": {
+          "fontStyle": "italic"
+        }
+      },
+      {
+        "scope": [
+          // the following elements will be displayed in bold
+          "entity.name.type.class" // class names
+        ],
+        "settings": {
+          "fontStyle": ""
+        }
+      },
+      {
+        "scope": [
+          // the following elements will be displayed in bold and italic
+          "entity.name.section.markdown" // markdown headlines
+        ],
+        "settings": {
+          "fontStyle": "italic"
+        }
+      },
+      {
+        "scope": [
+          // the following elements will be excluded from italics
+          //   (VSCode has some defaults for italics)
+          "invalid",
+          "keyword.operator",
+          "constant.numeric.css",
+          "keyword.other.unit.px.css",
+          "constant.numeric.decimal.js",
+          "constant.numeric.json",
+          "comment.block",
+          "entity.other.attribute-name.class.css"
+        ],
+        "settings": {
+          "fontStyle": ""
+        }
+      }
+    ]
+  },
+  "workbench.colorTheme": "GitHub Dark Default"
+}
