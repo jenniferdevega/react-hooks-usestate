@@ -1,5 +1,6 @@
 import React, { forwardRef, useImperativeHandle, useState } from "react";
 
+//make this as reference
 const Button = forwardRef((props, ref) => {
   const [toggle, setToggle] = useState(false);
   /* 
@@ -7,16 +8,18 @@ const Button = forwardRef((props, ref) => {
       In command Palette --> Inspect Editor Tokens and Scopes 
   */
 
-  useImperativeHandle(ref, () => {});
+  useImperativeHandle(ref, () => ({
+    // returns an object
+    alterToggle() {
+      setToggle(!toggle);
+    },
+  }));
+
   return (
     <>
-      <button
-        onClick={() => {
-          setToggle(!toggle);
-        }}
-      >
-        Button From Child
-      </button>
+      <br />
+      <button>Button From Child</button>
+      <br />
       {toggle && <span>Toggle</span>}
     </>
   );
