@@ -9,6 +9,7 @@ import TutorialEffect from "./TutorialEffect";
 import TutorialRef from "./TutorialRef";
 import TutorialLayoutEffect from "./TutorialLayoutEffect";
 import TutorialImperativeHandle from "./TutorialImperativeHandle";
+import TutorialUseContext from "./useContext/TutorialUseContext";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
@@ -20,6 +21,7 @@ root.render(
     <TutorialRef />
     <TutorialLayoutEffect />
     <TutorialImperativeHandle />
+    <TutorialUseContext />
   </React.StrictMode>
 );
 
