@@ -7,8 +7,20 @@ const TutorialImperativeHandle = () => {
 
   return (
     <div>
-      <button>Button From Parents</button>
-      <Button />
+      <h1>07 useImperative</h1>
+      <button
+        onClick={() => {
+          buttonRef.current.alterToggle();
+        }}
+      >
+        Button From Parents
+      </button>
+
+      {/* 
+        To make the Button/Child component as reference, import the useRef 
+      */}
+      <br />
+      <Button ref={buttonRef} />
     </div>
   );
 };
