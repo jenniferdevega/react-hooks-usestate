@@ -1,0 +1,127 @@
+### Modify terminal
+(nano == open)
+- sudo nano zshrc 
+- sudo nano bashrc
+-----===================================================================-----
+### Find /etc folder
+- open /etc
+- cd /etc
+-----===================================================================-----
+### Install
+- brew
+- nodejs (executing JS code) 
+	node -v
+- npm
+	sudo npm install -g npm@latest
+		also use to upgrade
+		install all packages in package.json
+
+	sudo n stable
+	npm -v
+- yarn
+	sudo npm install add --global yarn
+	sudo npm upgrade --global yarn
+- git
+	brew install git
+	brew upgrade git
+
+	Config
+		git config --global user.name “<github username>”
+		git config --global user.email <github email> 
+- GitHub CLI
+	brew install gh
+  	brew upgrade gh
+
+	Authenticate Github account
+   		gh auth login
+		gh auth status
+
+	Check repo list
+    		gh repo list
+-----===================================================================-----
+### bootstrap
+- npm install bootstrap@5.3.3
+
+vue with new folder
+- npm create vite@latest reactdemo -- --template react
+— no need to run this if the project already have vite
+
+Run app
+- npm run dev
+-----===================================================================-----
+### Create yarn react app and new repo in Github
+	Go to target local root folder
+	yarn create react-app <project folder name>
+		also initializes git (git init)
+		yarn discourages using global packages
+	Go to created new folder
+	yarn
+		to install yarn
+	yarn upgrade
+	yarn start
+		to run project
+		Ctrl + C - close session terminal
+	code .
+		to open in VS code
+	open VS code terminal 
+	gh repo list
+	gh repo create   
+		create remote to git hub as an option 
+-----===================================================================-----
+### Published existing local repo to Github
+	Go to target local root folder
+	gh repo create
+	git add .  (For all files)
+	git commit -m “<commit message>”
+	git status
+	git remote -v
+	git push -u origin master
+
+*** git init (in the target folder) 
+    - for app created in react, this is automatically initialized
+-----===================================================================-----
+### Other Git commands
+	git clone <repo url>
+
+	git checkout -b <new branch name>
+
+    git delete branch
+    // delete branch locally
+    git branch -D localBranchName
+
+    // delete branch remotely
+    git push origin --delete remoteBranchName
+
+	git add .  (For all files)
+	git add <name of file> (individual files)
+
+	git commit -m “<commit message>”
+	git status (to check modified files)
+
+	git remote -v
+  		to confirm remote has been added
+
+	git remote add origin https://github.com/jenniferdevega/<new repo name>.git
+	
+	git push -u origin master
+-----===================================================================-----
+### To update current local repo
+	git pull origin master or main
+	git remote update origin -- prune 
+	git branch -a
+-----===================================================================-----
+### To setup auto upstream(so not to use the git push -u origin master)
+	git config --global push.autoSetupRemote true
+	git push
+-----===================================================================-----
+Yarn commands
+	yarn test
+	yarn build
+-----===================================================================-----
+### API Calls
+Axois - common library for making API calls 
+	npm install axios
+	yarn add axios 
+-----===================================================================-----
+### To display the scope details used in settings.json
+In command Palette --> Inspect Editor Tokens and Scopes 
